@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normaliez.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search-container">
+        <input
+          type="text"
+          name="search"
+          class="search"
+          placeholder="enter city name"
+        />
+        <p class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></p>
+      </div>
+      <div class="weather hidden">
+        <img
+          src="images/raining.png"
+          alt=""
+          class="country-condition hidden"
+          data-cond="Rain"
+        />
+        <img
+          src="images/cloudy.png"
+          alt=""
+          class="country-condition hidden"
+          data-cond="Clouds"
+        />
+        <img
+          src="images/mist.png"
+          alt=""
+          class="country-condition hidden"
+          data-cond="Mist"
+        />
+        <img
+          src="images/snowy.png"
+          alt=""
+          class="country-condition hidden"
+          data-cond="Snow"
+        />
+        <img
+          src="images/drizzle.png"
+          alt=""
+          class="country-condition hidden"
+          data-cond="Atmosphere"
+        />
+        <img
+          src="images/sunny.png"
+          alt=""
+          class="country-condition"
+          data-cond="Clear"
+        />
+        <img
+          src="images/thunderstorm.png"
+          alt=""
+          class="country-condition hidden"
+          data-cond="Thunderstorm"
+        />
+        <p class="temp">22°c</p>
+        <p class="country-name">cairo</p>
+        <div class="conditions">
+          <div class="humidity">
+            <img src="images/humidity.png" alt="" />
+            <div class="info-humidity">
+              <p class="speed">50%</p>
+              <p class="name">humidity</p>
+            </div>
+          </div>
+          <div class="speed-wind">
+            <img src="images/wind.png" alt="" />
+            <div class="info-speed-wind">
+              <p class="speed">32 km/h</p>
+              <p class="name">speed wind</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="error hidden">please type the correct name</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
